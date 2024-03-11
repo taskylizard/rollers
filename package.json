@@ -1,0 +1,27 @@
+{
+  "name": "rollers",
+  "version": "0.1.0",
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "license": "MIT",
+  "bin": {
+    "rollers": "./dist/cli.mjs"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tasker build"
+  },
+  "dependencies": {
+    "@rolldown/node": "^0.0.5",
+    "citty": "^0.1.6",
+    "consola": "^3.2.3",
+    "globby": "^14.0.1"
+  }
+}
