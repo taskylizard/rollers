@@ -34,7 +34,10 @@
     "dev": "tsdown --watch",
     "clean": "rm -rf dist",
     "type-check": "tsc --noEmit",
-    "prepublishOnly": "pnpm run build"
+    "prepublishOnly": "pnpm run build",
+    "changeset": "changeset",
+    "changeset:publish": "changeset publish",
+    "changeset:version": "changeset version"
   },
   "dependencies": {
     "tinyexec": "^0.3.1"
