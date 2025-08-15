@@ -1,6 +1,6 @@
 {
   "name": "rollers",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Generate OpenGraph images using Typst templates with variable substitution",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
