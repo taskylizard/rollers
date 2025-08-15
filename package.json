@@ -1,7 +1,7 @@
 {
   "name": "rollers",
   "version": "0.1.0",
-  "description": "Rollering up",
+  "description": "Generate OpenGraph images using Typst templates with variable substitution",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
@@ -27,7 +27,14 @@
   "homepage": "https://github.com/taskylizard/rollers#readme",
   "keywords": [
     "typescript",
-    "library"
+    "library",
+    "opengraph",
+    "image-generation",
+    "typst",
+    "template",
+    "social-media",
+    "png",
+    "og-image"
   ],
   "scripts": {
     "build": "tsdown",
@@ -50,5 +57,9 @@
   },
   "engines": {
     "node": ">=18.0.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
   }
 }
