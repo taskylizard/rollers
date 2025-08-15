@@ -1,0 +1,51 @@
+{
+  "name": "rollers",
+  "version": "0.1.0",
+  "description": "Rollering up",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "author": "taskylizard",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/taskylizard/rollers.git"
+  },
+  "bugs": {
+    "url": "https://github.com/taskylizard/rollers/issues"
+  },
+  "homepage": "https://github.com/taskylizard/rollers#readme",
+  "keywords": [
+    "typescript",
+    "library"
+  ],
+  "scripts": {
+    "build": "tsdown",
+    "dev": "tsdown --watch",
+    "clean": "rm -rf dist",
+    "type-check": "tsc --noEmit",
+    "prepublishOnly": "pnpm run build"
+  },
+  "dependencies": {
+    "tinyexec": "^0.3.1"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.29.5",
+    "@types/node": "^20.0.0",
+    "tsdown": "^0.13.0",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
